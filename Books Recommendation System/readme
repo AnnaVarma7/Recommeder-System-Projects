@@ -1,0 +1,38 @@
+📚 Book Recommendation System
+A content-based recommendation system that suggests books based on user input. It uses TF-IDF vectorization and cosine similarity to recommend titles based on book descriptions (titles + authors).
+
+🔍 Project Overview
+This project analyzes a dataset of 11,000+ books and builds a recommendation engine that:
+Explores rating distributions and author contributions.
+Uses NLP techniques to vectorize book metadata.
+Suggests similar books based on a user-provided title.
+
+🧠 Techniques Used
+TF-IDF Vectorization (title + author combined)
+Cosine Similarity for recommendation
+Plotly for interactive visualizations
+
+📊 Exploratory Data Analysis
+📈 Histogram of average ratings
+
+👩‍💻 Top 10 most frequent authors
+
+⚙️ How It Works
+Merges title and authors into a single feature.
+Vectorizes the merged text using TfidfVectorizer.
+Computes similarity using linear_kernel.
+Recommends top 10 similar books for any given title.
+
+🧪 Sample Output
+Given input: "Dubliners: Text Criticism and Notes"
+Top 5 Recommendations:
+CliffsNotes on Joyce's Dubliners
+Dubliners
+The Portable James Joyce
+White Noise: Text and Criticism
+The Quiet American: Text and Criticism
+
+📂 Dataset
+File: books_data.csv
+Columns: bookID, title, authors, average_rating
+
